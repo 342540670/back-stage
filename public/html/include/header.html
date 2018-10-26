@@ -1,0 +1,97 @@
+<!--  导航     -->
+<div class="container">
+    <nav class="navbar navbar-inverse">
+     <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">职业管理系统</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav second">
+              <li class="active"><a href="/index.html">首页 <span class="sr-only">(current)</span></a></li>
+              <li ><a href="/html/position.html">职位管理</a></li>
+            </ul>
+             
+            <ul class="nav navbar-nav navbar-right">
+              <li data-toggle="modal" data-target="#loginModal"><a href="#">登录</a></li>
+              <li data-toggle="modal" data-target="#regModal"><a href="#">注册</a></li>
+            </ul>
+           </div><!-- /.container -->
+          </div><!-- /.navbar-collapse -->
+        
+      </nav>
+      <div class="row">
+            <div class="col-md-10 col-md-offset-1 alert alert-info">
+                基于NodeJS+Express+EJS+MongoDB的职位管理系统</div>
+        </div>
+    
+    <!-- 注册模态框 -->
+    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">用户注册</h4>
+                </div>
+                <div class="modal-body">
+                        <form>
+                                <div class="form-group">
+                                  <label for="regusername">用户名</label>
+                                  <input type="text" class="form-control" id="regusername" placeholder="用户名">
+                                </div>
+                                <div class="form-group">
+                                  <label for="regpassword">密码</label>
+                                  <input type="password" class="form-control" id="regpassword" placeholder="密码">
+                                </div>
+                                <div class="form-group">
+                                        <label for="regpassword2">再次输入密码</label>
+                                        <input type="password" class="form-control" id="regpassword2" placeholder="请再输入密码">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="email">邮箱</label>
+                                        <input type="email" class="form-control" id="email" placeholder="邮箱">
+                                      </div> 
+                              </form>
+      </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                  <button type="button" class="btn btn-primary">注册</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- 登录模态框 -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">用户登录</h4>
+          </div>
+          <div class="modal-body">
+                  <form>
+                          <div class="form-group">
+                            <label for="loginusername">用户名</label>
+                            <input type="text" class="form-control" id="loginusername" placeholder="用户名">
+                          </div>
+                          <div class="form-group">
+                            <label for="loginpassword">密码</label>
+                            <input type="password" class="form-control" id="loginpassword" placeholder="密码">
+                          </div>
+                           
+                        </form>
+    </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary">登录</button>
+          </div>
+        </div>
+      </div>
+    </div>
